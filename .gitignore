@@ -1,0 +1,68 @@
+# ==================================
+# Character Killing Monuments BR Edition
+# Git Ignore
+# ==================================
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# NetBeans
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+
+# Java compiled files
+*.class
+
+# Build directories
+out/
+target/
+build/
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Operating System files
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# Linux
+*~
+
+# Gradle
+.gradle/
+
+# Maven
+.mvn/
+
+# Database backups
+*.sql.bak
+*.dump
+
+# Server runtime files
+gameserver/log/
+loginserver/log/
+
+# Local configuration files
+config/local/
