@@ -173,3 +173,20 @@ Architecture decisions should prioritize:
 This document will evolve together with the implementation.
 
 Every important architectural change should be documented here.
+
+---
+
+## Player Snapshot System
+
+The monument does not store a live player instance.
+
+The system stores the character ID and reconstructs a player representation through L2PcPolymorph.loadMonumentPlayer().
+
+Flow:
+
+Database
+-> Character ID
+-> Monument Player Loader
+-> Fake Player Representation
+-> NPC Polymorph
+-> Client Packet
