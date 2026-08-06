@@ -1,9 +1,7 @@
 <p align="center">
-  <img src="assets/medieval_golden_banner.png" width="1000" alt="BrProject-Mods Banner">
+  <img src="assets/medieval_golden_banner1.png" width="1280" alt="BrProject-Mods Banner">
 </p>
-
 <h1 align="center">🚀 BrProject-Mods</h1>
-
 <p align="center">
 Classic Mods • Modern Adaptations • Public_Brproject
 </p>
