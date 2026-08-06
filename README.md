@@ -1,9 +1,17 @@
 <p align="center">
-  <img src="assets/medieval_golden_banner1.png" width="1280" alt="BrProject-Mods Banner">
+  <img src="assets/medieval_golden_banner1.png" width="1280">
 </p>
-<h1 align="center">🚀 BrProject-Mods</h1>
+<h1 align="center">
+BrProject-Mods
+</h1>
 <p align="center">
 Classic Mods • Modern Adaptations • Public_Brproject
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/Java-25-orange">
+  <img src="https://img.shields.io/badge/L2J-Interlude-blue">
+  <img src="https://img.shields.io/badge/Public_Brproject-Compatible-green">
+  <img src="https://img.shields.io/badge/Status-Active-success">
 </p>
 
 > Preserving classic Lineage 2 community projects while adapting them for modern **Public_Brproject** revisions.
