@@ -1,4 +1,12 @@
-# 🚀 BrProject-Mods
+<p align="center">
+  <img src="assets/medieval_golden_banner.png" width="1000" alt="BrProject-Mods Banner">
+</p>
+
+<h1 align="center">🚀 BrProject-Mods</h1>
+
+<p align="center">
+Classic Mods • Modern Adaptations • Public_Brproject
+</p>
 
 > Preserving classic Lineage 2 community projects while adapting them for modern **Public_Brproject** revisions.
 >
