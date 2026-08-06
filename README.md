@@ -1,54 +1,31 @@
-# 🏆 Character Killing Monuments BR Edition
+# 🚀 BrProject-Mods
 
-> Preserving the original idea while embracing modern development practices.
+> Preserving classic Lineage 2 community projects while adapting them for modern **Public_Brproject** revisions.
 >
-> Preservando a ideia original enquanto adotamos práticas modernas de desenvolvimento.
+> Preservando projetos clássicos da comunidade Lineage 2 enquanto os adaptamos para revisões modernas do **Public_Brproject**.
 
 ---
 
 # 📖 About
 
-## English
+**BrProject-Mods** is a collection of custom mods, classic community projects and modern adaptations for **Public_Brproject (L2J ExtMods / Interlude)**.
 
-Character Killing Monuments BR Edition (CKM BR Edition) is a modern adaptation of the classic Character Killing Monuments system originally developed by **Paytaly** and published on **L2JBrasil** in August 2015.
+The goal is to preserve the original work of the community, modernize compatibility, improve documentation and keep every original author properly credited.
 
-The original project was created for L2J Frozen revisions and became a popular system among Lineage 2 server developers.
+Este repositório reúne mods, adaptações e sistemas para o **Public_Brproject (L2J ExtMods / Interlude)**.
 
-The goal of this project is to preserve the original concept while adapting it to modern revisions, especially **Public_Brproject**, providing cleaner organization, updated compatibility, documentation and continuous maintenance.
-
-## Português
-
-Character Killing Monuments BR Edition (CKM BR Edition) é uma adaptação moderna do clássico sistema Character Killing Monuments originalmente desenvolvido por **Paytaly** e publicado no fórum **L2JBrasil** em Agosto de 2015.
-
-O projeto original foi desenvolvido para revisões L2J Frozen e se tornou um sistema bastante utilizado pela comunidade de desenvolvedores de servidores Lineage 2.
-
-O objetivo deste projeto é preservar a ideia original enquanto traz compatibilidade para revisões modernas, especialmente o **Public_Brproject**, oferecendo melhor organização, documentação e manutenção contínua.
+O objetivo é preservar projetos clássicos da comunidade, modernizar a compatibilidade, melhorar a documentação e manter os devidos créditos aos autores originais.
 
 ---
 
-# ✨ Features
+# ✨ Available Mods
 
-## English
+| Mod | Status | Original Author(s) | Modern Adaptation |
+|------|--------|--------------------|-------------------|
+| Character Killing Monuments | ✅ | Paytaly | Anton Deep |
+| NPC Siege Register | ✅ | RedHoT & Smallz' | Anton Deep |
 
-- 🏆 Top PvP Monument
-- ☠️ Top PK Monument
-- 📅 Ranking based on the last 24 hours
-- 👤 Player appearance synchronization
-- 🎭 Native Polymorph / Fake Player integration
-- ⚡ Dynamic monument updates
-- 🛠 Organized installation process
-- 📚 Complete documentation
-
-## Português
-
-- 🏆 Monumento Top PvP
-- ☠️ Monumento Top PK
-- 📅 Ranking baseado nas últimas 24 horas
-- 👤 Sincronização da aparência do jogador
-- 🎭 Integração com Polymorph / Fake Player
-- ⚡ Atualização dinâmica dos monumentos
-- 🛠 Processo de instalação organizado
-- 📚 Documentação completa
+More mods will be added over time.
 
 ---
 
@@ -59,139 +36,104 @@ O objetivo deste projeto é preservar a ideia original enquanto traz compatibili
 | Public_Brproject | ✔ Supported |
 | Java 25 | ✔ Supported |
 | IntelliJ IDEA | ✔ Supported |
-| L2J Interlude | ✔ Target |
+| L2J ExtMods | ✔ Supported |
+| Interlude | ✔ Target |
 
 ---
 
 # 📂 Repository Structure
-CharacterKillingMonuments-BR-Edition
 
-* ├── docs/
-* │ ├── architecture/
-* │ ├── guides/
-* │ ├── images/
-* │ └── releases/
-* │
-* ├── diff/
-* │
-* ├── sql/
-* │
-* ├── CHANGELOG.md
-* ├── CREDITS.md
-* ├── INSTALL.md
-* ├── PROJECT_HISTORY.md
-* ├── README.md
-* ├── RELEASES.md
-* ├── ROADMAP.md
-* └── TODO.md
+```text
+BrProject-Mods/
+│
+├── CharacterKillingMonuments/
+│   ├── diff/
+│   ├── source/
+│   ├── sql/
+│   ├── html/
+│   └── README.md
+│
+├── NPCSiegeRegister/
+│   ├── diff/
+│   ├── source/
+│   ├── html/
+│   └── README.md
+│
+├── docs/
+├── CHANGELOG.md
+├── LICENSE
+└── README.md
+```
 
 ---
 
-# 🚧 Project Status
+# 🎯 Project Goals
 
-## English
-
-This project is currently under development.
-
-The objective is to create a stable, documented and easy-to-maintain version of Character Killing Monuments for modern Public_Brproject revisions.
-
-## Português
-
-Este projeto está atualmente em desenvolvimento.
-
-O objetivo é criar uma versão estável, documentada e fácil de manter do Character Killing Monuments para revisões modernas do Public_Brproject.
+- Preserve classic Lineage 2 projects.
+- Keep original credits.
+- Modernize compatibility.
+- Maintain clean code.
+- Provide organized documentation.
+- Make installation simple.
 
 ---
 
 # 📚 Documentation
 
-The project documentation can be found inside the `docs/` directory.
-
-A documentação do projeto estará disponível dentro do diretório `docs/`.
-
-Available documentation:
-
-- Installation Guide
-- Architecture Documentation
-- Development Notes
-- Release Information
-
----
-
-# 🛠 Development Philosophy
-
-## English
-
-Character Killing Monuments BR Edition follows these principles:
-
-- Preserve the original author's work.
-- Keep credits properly maintained.
-- Maintain clean and organized code.
-- Document important changes.
-- Keep compatibility with future revisions whenever possible.
-
-## Português
-
-O Character Killing Monuments BR Edition segue estes princípios:
-
-- Preservar o trabalho do autor original.
-- Manter os créditos corretamente.
-- Manter código limpo e organizado.
-- Documentar alterações importantes.
-- Buscar compatibilidade com futuras revisões sempre que possível.
+Each mod contains its own documentation, installation guide and notes.
 
 ---
 
 # 🤝 Contributing
 
-## English
-
-Bug reports, suggestions and contributions are welcome.
-
-Please check the contribution guidelines before submitting changes.
-
-## Português
-
-Relatórios de bugs, sugestões e contribuições são bem-vindos.
-
-Consulte as regras de contribuição antes de enviar alterações.
+Bug reports, suggestions and pull requests are welcome.
 
 ---
 
 # 👏 Credits
 
-Original Author:
+## Character Killing Monuments
 
-**Paytaly**
+Original Author
 
-Original Character Killing Monuments release:
-L2JBrasil - August 2015
+- **Paytaly**
 
----
+Original Release
 
-Adaptation:
+- L2JBrasil (August 2015)
 
-**Anton Deep**
+Modern Adaptation
 
-Public_Brproject compatibility and modernization.
-
----
-
-Technical Assistance:
-
-**OpenAI ChatGPT**
-
-Support in:
-
-- Revision analysis
-- Debugging
-- Code adaptation
-- Architecture planning
-- Documentation organization
+- **Anton Deep**
 
 ---
 
-Special Thanks:
+## NPC Siege Register
+
+Original Authors
+
+- **RedHoT**
+- **Smallz'**
+
+Original Release
+
+- L2JBrasil (May 2012)
+
+Modern Adaptation
+
+- **Anton Deep**
+
+---
+
+## Technical Assistance
+
+- **OpenAI ChatGPT**
+
+Support provided for architecture discussions, debugging, code adaptation and documentation.
+
+---
+
+## Special Thanks
 
 - L2JBrasil Community
 - Public_Brproject Developers
@@ -205,18 +147,12 @@ See `LICENSE`.
 
 ---
 
-# 🚀 Project Vision
+# 🚀 Vision
 
-Character Killing Monuments BR Edition is not only a code adaptation.
-
-It is a continuation of a project that became part of the Lineage 2 development community.
-
-The objective is to respect the past, improve the present and prepare the project for the future.
+BrProject-Mods is intended to become a well-organized collection of classic and modern mods for Public_Brproject, respecting the past while making future development easier.
 
 ---
 
 # 📌 Maintainer
 
 **Anton Deep**
-
-Project Maintainer

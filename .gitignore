@@ -65,4 +65,4 @@ gameserver/log/
 loginserver/log/
 
 # Local configuration files
-config/local/
+CharacterKillingMonuments/config/local/
