@@ -68,7 +68,6 @@ public final class CharacterKillingManager {
             if (rs.next())
             {
                 _log.info("CKM: Carregando último ciclo salvo.");
-                // _cycle = rs.getInt("cycle");
                 _cycleStart = rs.getLong("cycle_start");
 
                 _winnerPvPKills = rs.getInt("winner_pvpkills");
@@ -77,7 +76,6 @@ public final class CharacterKillingManager {
                 _winnerPKKills = rs.getInt("winner_pkkills");
                 _winnerPKKillsCount = rs.getInt("winner_pkkills_count");
 
-                _log.info("CKM LOAD LAST WINNER");
                 _log.info("Vencedor PvP ID: " + _winnerPvPKills);
                 _log.info("Vencedor PK ID: " + _winnerPKKills);
             }
@@ -157,8 +155,6 @@ public final class CharacterKillingManager {
              ResultSet rs = st.executeQuery()) {
             if (rs.next())
             {
-                _log.info("CKM PvP atualizado: ID=" + rs.getInt("obj_Id") + " Nome=" + rs.getString("char_name") + " Kills=" + rs.getInt("pvpkills"));
-
                 _winnerPvPKills = rs.getInt("obj_Id");
                 _winnerPvPKillsCount = rs.getInt("pvpkills");
                 _winnerPvPKillsInfo = null;
@@ -180,8 +176,6 @@ public final class CharacterKillingManager {
              ResultSet rs = st.executeQuery()) {
             if (rs.next())
             {
-                _log.info("CKM PK atualizado: ID=" + rs.getInt("obj_Id") + " Nome=" + rs.getString("char_name") + " Kills=" + rs.getInt("pkkills"));
-
                 _winnerPKKills = rs.getInt("obj_Id");
                 _winnerPKKillsCount = rs.getInt("pkkills");
                 _winnerPKKillsInfo = null;
@@ -233,10 +227,6 @@ public final class CharacterKillingManager {
         npc.setTitleColor(Config.CKM_PVP_NPC_TITLE_COLOR);
         npc.setNameColor(Config.CKM_PVP_NPC_NAME_COLOR);
         npc.setPolymorphInfo(winnerPvPKillsInfo);
-        _log.info("CKM World Count: " + World.getInstance().getPlayers().size());
-
-        _log.info(
-                "CKM: Monumento PvP atualizado -> " + winnerPvPKillsInfo.getName() + " (" + winnerPvPKillsInfo.getObjectId() + ")");
 
         for (Player player : World.getInstance().getPlayers())
         {
@@ -263,9 +253,6 @@ public final class CharacterKillingManager {
         npc.setTitleColor(Config.CKM_PK_NPC_TITLE_COLOR);
         npc.setNameColor(Config.CKM_PK_NPC_NAME_COLOR);
         npc.setPolymorphInfo(winnerPKKillsInfo);
-        _log.info("CKM World Count: " + World.getInstance().getPlayers().size());
-
-        _log.info("CKM: Monumento PK atualizado -> " + winnerPKKillsInfo.getName() + " (" + winnerPKKillsInfo.getObjectId() + ")");
 
         for (Player player : World.getInstance().getPlayers())
         {

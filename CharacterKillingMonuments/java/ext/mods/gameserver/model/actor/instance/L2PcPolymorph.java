@@ -36,11 +36,13 @@ import ext.mods.gameserver.custom.data.PolymorphData.Polymorph;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.logging.Logger;
 
 /**
  * @author paytaly
  */
 public class L2PcPolymorph extends Npc {
+	private static final Logger _log = Logger.getLogger(L2PcPolymorph.class.getName());
 	private Player _polymorphInfo;
 	private Polymorph _fakePc;
 	// Config nova passada para String
@@ -64,9 +66,6 @@ public class L2PcPolymorph extends Npc {
 	{
 		if(player == null)
 			return;
-
-		System.out.println("====== CKM SET POLYMORPH ======");
-		System.out.println("Nome: " + player.getName());
 
 		_polymorphInfo = player;
 		_fakePc = buildFakePc(player);
@@ -132,11 +131,11 @@ public class L2PcPolymorph extends Npc {
 	@Override
 	public void sendInfo(Player activeChar)
 	{
-		System.out.println("CKM SEND INFO");
+		_log.fine("CKM SEND INFO");
 
 		if (_fakePc == null && getPolymorphInfo() != null)
 		{
-			System.out.println("CKM REBUILD FAKE PC SEND INFO");
+			_log.fine("CKM REBUILD FAKE PC SEND INFO");
 			_fakePc = buildFakePc(getPolymorphInfo());
 		}
 
@@ -164,18 +163,9 @@ public class L2PcPolymorph extends Npc {
 	{
 		String filename = getHtmlPath(getNpcId(), val);
 
-		System.out.println("================================");
-		System.out.println("NPC ID : " + getNpcId());
-		System.out.println("HTML   : " + filename);
-		System.out.println("================================");
-
 		NpcHtmlMessage html = new NpcHtmlMessage(getObjectId());
 
 		html.setFile(player.getLocale(), filename);
-
-		System.out.println("===== HTML CARREGADO =====");
-		System.out.println(html.getContent());
-		System.out.println("==========================");
 
 		html.replace("%objectId%", getObjectId());
 
@@ -207,13 +197,11 @@ public class L2PcPolymorph extends Npc {
 
 	public static Player loadMonumentPlayer(int objectId)
 	{
-		System.out.println("====== CKM LOAD MONUMENT PLAYER ======");
-		System.out.println("ObjectId: " + objectId);
 		// Se estiver online usa a instância existente
 		Player player = World.getInstance().getPlayer(objectId);
 		if ((player != null) && player.isOnline())
 		{
-			System.out.println("CKM PLAYER ONLINE: " + player.getName());
+			_log.fine("CKM PLAYER ONLINE: " + player.getName());
 			return player;
 		}
 
@@ -228,7 +216,7 @@ public class L2PcPolymorph extends Npc {
 			{
 				if (!rs.next())
 				{
-					System.out.println("CKM PLAYER NÃO ENCONTRADO.");
+					_log.fine("CKM PLAYER NÃO ENCONTRADO.");
 					return null;
 				}
 
@@ -263,13 +251,6 @@ public class L2PcPolymorph extends Npc {
 				{
 					player.setHero(true);
 				}
-
-				System.out.println("====== CKM INVENTORY ======");
-				System.out.println("RHAND : " + player.getInventory().getItemIdFrom(Paperdoll.RHAND));
-				System.out.println("CHEST : " + player.getInventory().getItemIdFrom(Paperdoll.CHEST));
-				System.out.println("LEGS  : " + player.getInventory().getItemIdFrom(Paperdoll.LEGS));
-				System.out.println("GLOVES: " + player.getInventory().getItemIdFrom(Paperdoll.GLOVES));
-				System.out.println("FEET  : " + player.getInventory().getItemIdFrom(Paperdoll.FEET));
 
 				return player;
 			}
