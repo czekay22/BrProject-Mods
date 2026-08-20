@@ -69,7 +69,7 @@ Examples:
 
 A complete demonstration video is available on YouTube.
 
-> (Video link will be added after publication.)
+> https://www.youtube.com/watch?v=2RzG7pDzBzI
 
 ---
 
@@ -95,7 +95,7 @@ SiegeRegisterNpc
 │   ├── images/
 │   └── guides/
 │
-├── html/
+├── data/xml/npcs/custom
 ├── source/
 │
 ├── CHANGELOG.md
